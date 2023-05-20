@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous">
+        </script>
+
+
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <div id="nav"></div>
+
+
+    <div class="container">
+        <div class="row align-center">
+            <div class="col col3 align-content-left">
+                <h3 class="bold">Login</h3>
+            </div>
+            <div class="col col3 align-content-left">
+                <div class="col">
+                    <input type="radio" id="simpatizzante" name="selezione" value="Simpatizzante" checked>
+                    <label for="simpatizzante">Simpatizzante</label>
+                </div>
+
+                <div class="col">
+                    <input type="radio" id="Aderente" name="selezione" value="Aderente">
+                    <label for="Aderente">Aderente</label>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row align-center">
+            <div class="col col6">
+                <div class="col col6">
+                    <div style="width: 100%;">
+                        <label for="name" class="">Nome</label> <span class="spacer-8"></span>
+                        <input class="input-block" id="name" type="text" placeholder="Mario">
+                    </div>
+
+                </div>
+                <div class="col col6">
+                    <div style="width: 100%;">
+                        <label for="password" class="">Password</label> <span class="spacer-8"></span>
+                        <input class="input-block" id="password" type="password" placeholder="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row align-center">
+            <div class="col col6">
+                <div class="col col6">
+                    <div style="width: 100%;">
+                        <label for="cognome" class="">Cognome</label> <span class="spacer-8"></span>
+                        <input class="input-block" id="cognome" type="text" placeholder="Rossi">
+                    </div>
+
+                </div>
+                <div class="col col6">
+                    <div style="width: 100%;">
+                        <label for="password2" class="">Conferma Password</label> <span class="spacer-8"></span>
+                        <input class="input-block" id="password2" type="password" placeholder="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="row align-center">
+            <div class="col col6">
+                <div class="col">
+                    <div style="width: 100%;">
+                        <label for="username" class="">Username</label> <span class="spacer-8"></span>
+                        <input class="input-block" id="username" type="text" placeholder="brick">
+                    </div>
+                </div>
+                <div class="col">
+                    <div style="width: 100%;">
+                        <label for="email" class="">Email</label> <span class="spacer-8"></span>
+                        <input class="input-block" id="email" type="email" placeholder="mario.rossi@example.com">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row align-center">
+            <div class="col col6">
+                <div class="col col6">
+                    <div style="width: 100%;">
+                        <label for="password2" class="">Data di nascita</label> <span class="spacer-8"></span>
+                        <input class="input-block" id="password2" type="date" placeholder="">
+                    </div>
+
+                </div>
+                <div class="col col6">
+                    <div style="width: 100%;">
+                        <label for="password2" class="">Telefono</label> <span class="spacer-8"></span>
+                        <input class="input-block" id="password2" type="password" placeholder="123 4567 890">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row align-center">
+            <div class="col col3 offset3 align-content-right">
+
+                <btn class="btn btn-outline-primary"> Cancella</btn>
+                <span class="spacer-8"></span>
+                <btn class="btn btn-primary"> Conferma</btn>
+
+            </div>
+
+        </div>
+
+        <div class="row align-center">
+            <div class="col col3 offset3 align-content-right" style="padding-top:0">
+
+                <p><small>Possiedi già un account? <a href="login.html">Clicca qui.</a></small></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="footer"></div>
+
+
+    <script>
+        $("#footer").load("./includes/footer.html");
+        $("#header").load("./includes/header.html");
+        $("#nav").load("./includes/nav.html");
+
+    </script>
+</body>
+
+</html>

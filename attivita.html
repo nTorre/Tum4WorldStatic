@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous">
+        </script>
+
+    
+
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <div id="nav"></div>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="align-content-center">
+                    <h3>Attività</h3>
+                    <p>Ogni giorno ci impegnamo per lasciare un segno positivo nel mondo.<br> Queste sono le attività che
+                        attualmente proponiamo:</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin: 0px 60px;">
+            <div class="col">
+                <a href="attivita_es.html" class="card" id="card1">
+                        <h4>Attività prova</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed sodales mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="attivita_es.html" class="card" id="card2">
+                    <h4>Attività prova</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed sodales mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="attivita_es.html" class="card" id="card3">
+                        <h4>Attività prova</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed sodales mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </a>
+            </div>
+        </div>
+
+        <span class="spacer-64"></span>
+
+        <div class="row">
+            <div class="col">
+                <p>Hai in mente nuove idee? Mandaci un messaggio attraverso la pagina <a href="contatti.html">contatti</a>.</p>
+            </div>
+        </div>
+
+        <span class="spacer-64"></span>
+
+    </div>
+
+    <div id="footer"></div>
+
+
+    <script>
+        $("#footer").load("./includes/footer.html");
+        $("#header").load("./includes/header.html");
+        $("#nav").load("./includes/nav.html");
+
+        //document.getElementById("card1").style.backgroundImage = "url('imgs/card.svg')";
+        document.getElementById("card1").style.background = "linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.8)),url('https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067_640.png')";
+        document.getElementById("card2").style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.8)),url('https://expertphotography.b-cdn.net/wp-content/uploads/2022/05/Landscape-Photography-Sophie-Turner.jpg')";
+        document.getElementById("card3").style.background = "linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.8)),url('https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067_640.png')";
+
+    </script>
+</body>
+
+</body>
+
+</html>

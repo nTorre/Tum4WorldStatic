@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous">
+        </script>
+
+</head>
+<body>
+
+    <div id="header"></div>
+
+    <div id="nav"></div>
+    
+    
+
+    <div class="container">
+        <div class="row align-center">
+            <div class="col col4 align-content-left"><h3 class="bold">Login</h3></div>
+        </div>
+
+        <div class="row align-center">
+            <div class="col col4">
+                <div class="form-control">
+                    <label for="email2" class="">Inserisci Email</label>
+                    <input class="input-block" id="email2" type="text" placeholder="name@example.com">
+        
+                    <span class="spacer-32"></span>
+        
+                    <label for="password2" class="">Inserisci Password</label>
+                    <input class="input-block" id="password2" type="password" placeholder="">
+        
+                    <span class="spacer-32"></span>
+        
+                    <div class="row">
+                        <div class="col align-content-center">
+                            <button class="btn btn-outline-primary">Annulla</button>
+                        </div>
+                        <div class="col align-content-center">
+                            <button class="btn btn-primary">Conferma</button>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+
+    <script>
+        $("#footer").load("./includes/footer.html");
+        $("#header").load("./includes/header.html");
+        $("#nav").load("./includes/nav.html");
+
+    </script>
+</body>
+   
+</body>
+</html>
