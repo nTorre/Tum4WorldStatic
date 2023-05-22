@@ -40,6 +40,7 @@ body {
     font-family: var(--font-family-sans-serif);
     margin: 0;
     padding: 0;
+    background: var(--gray-100);
 }
 
 .clearfix {
@@ -142,7 +143,7 @@ mark {
     background-color: #fcf8e3;
 }
 
-blockquote {}
+
 
 blockquote p {
     font-family: 'Merriweather', serif;
@@ -151,6 +152,8 @@ blockquote p {
 
 figure {
     display: inline-block;
+    background: #fff;
+    width: 100%
 }
 
 figcaption {
@@ -164,6 +167,15 @@ figure,
 .no-space {
     padding: 0;
     margin: 0;
+}
+
+blockquote,
+figcaption {
+    margin-left: 130px
+}
+
+figure {
+    padding-bottom: 20px;
 }
 
 .text-left {
@@ -610,18 +622,18 @@ input[type="radio"] {
     width: auto;
 }
 
-.card p{
+.card p {
     padding: 0px 30px;
     color: var(--gray-300);
     font-weight: 200 !important;
 }
 
-.card h4{
+.card h4 {
     color: var(--gray-200);
     padding: 30px 0px;
 }
 
-.vertically-center{
+.vertically-center {
     position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
@@ -725,7 +737,55 @@ footer a:hover {
     color: var(--gray-300);
 }
 
+/*Itineriario*/
+.it {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 
+.it-circles {
+    min-width: 45px;
+    min-height: 45px;
+    max-width: 45px;
+    max-height: 45px;
+    background: var(--gray-300);
+    border-radius: 50%;
+    border: 1px solid var(--gray-400);
+    flex: 1;
+}
+
+.it-orario {
+    margin-left: 30px;
+    flex: 1;
+}
+
+.it-line {
+    border-left: 1px solid var(--gray-400);
+    width: 0px;
+    margin-left: 23px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+
+.it-dashed {
+    border-left: 1px solid var(--gray-400);
+    border-right: 0px;
+    border-style: dashed;
+}
+
+/*Altro*/
+ul {
+    list-style-type: '- ';
+}
+
+/*Solo per il container non scorrevole per posizionare al centro gli elementi*/
+.all-screen-centered {
+    min-height: calc(100vh - 224px);
+    display: flex;
+    align-items: center;
+}
 
 /*responsive*/
 
