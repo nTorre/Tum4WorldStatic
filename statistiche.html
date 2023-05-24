@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous">
+        </script>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+
+
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <div id="nav"></div>
+
+
+
+    <div class="container">
+
+        <div class="row" style="margin-top: 30px;">
+            <div class="col col4">
+                <div>
+                    <h3>Visite totali</h3>
+                    <p><strong>15324</strong></p>
+                    <span class="spacer-32"></span>
+                    <button class="btn btn-primary">Reset contatori</button>
+                </div>
+            </div>
+            <div class="col col8">
+                <div id="graph"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer"></div>
+
+
+    <script>
+        $("#footer").load("./includes/footer.html");
+        $("#header").load("./includes/header.html");
+        $("#nav").load("./includes/logged_nav.html");
+
+    </script>
+
+    <script>
+        Highcharts.chart('graph', {
+            chart: {
+                type: 'column',
+                backgroundColor: 'transparent',
+                width: 700
+            },
+            colors: [
+                'var(--gray-300)'
+            ]
+
+            ,
+            title: {
+                align: 'left',
+                text: 'Visite gennaio-dicembre'
+            },
+            subtitle: {
+                align: 'left',
+                text: 'Tutte le visite da gennaio a dicembre mese per mese'
+            },
+            accessibility: {
+                announceNewData: {
+                    enabled: true
+                }
+            },
+            xAxis: {
+                type: 'category'
+            },
+            yAxis: {
+                title: {
+                    text: 'Visite'
+                }
+
+            },
+            legend: {
+                enabled: false
+            },
+            plotOptions: {
+                series: {
+                    borderWidth: 0,
+                    /*dataLabels: {
+                        enabled: true,
+                        format: '{point.y:.1f}%'
+                    }*/
+                }
+            },
+
+
+            series: [
+                {
+                    name: 'Visite',
+                    colorByPoint: true,
+                    data: [
+                        {
+                            name: 'Gennaio',
+                            y: 630,
+                            drilldown: 'Gennaio'
+                        },
+                        {
+                            name: 'Febbraio',
+                            y: 1984,
+                            drilldown: 'Febbraio'
+                        },
+                        {
+                            name: 'Marzo',
+                            y: 2004,
+                            drilldown: 'Marzo'
+                        },
+                        {
+                            name: 'Aprile',
+                            y: 1589,
+                            drilldown: 'Aprile'
+                        },
+                        {
+                            name: 'Maggio',
+                            y: 1450,
+                            drilldown: 'Maggio'
+                        }
+                        
+                    ]
+                }
+            ]
+
+        });
+
+    </script>
+</body>
+
+</body>
+
+</html>

@@ -787,6 +787,37 @@ ul {
     align-items: center;
 }
 
+.admin_foto {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/*Tabelle*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+}
+
+tr{
+    border-bottom: 1pt solid black;
+}
+
+td, th{
+    padding: 20px;
+}
+
+.no-margin{
+    margin: 0px;
+    padding: 0px;;
+}
+
 /*responsive*/
 
 /*Big smartphones [426px -> 600px]*/

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous">
+        </script>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+
+
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <div id="nav"></div>
+
+
+
+    <div class="container ">
+
+        <div class="row" style="margin-top: 30px;">
+            <div class="col col7">
+                <div id="graph"></div>
+            </div>
+
+            <div class="col col5 align-content-center">
+                <div style="padding: 0 100px;">
+                    <h6 class="no-margin">Mario Rossi - 84€</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed sodales mi. </p>
+
+                    <span class="spacer-32"></span>
+
+                    <h6 class="no-margin">Giovanna Varni - 50€</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed sodales mi. </p>
+
+                    <span class="spacer-32"></span>
+
+                    <h6 class="no-margin">Mario Rossi - 84€</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed sodales mi. </p>
+                    <span class="spacer-32"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+
+    <script>
+        $("#footer").load("./includes/footer.html");
+        $("#header").load("./includes/header.html");
+        $("#nav").load("./includes/logged_nav.html");
+    </script>
+
+    <script>
+        Highcharts.chart('graph', {
+            chart: {
+                backgroundColor: 'transparent',
+            },
+            title: {
+                text: 'Donazioni dell’ultimo anno',
+                align: 'left',
+                width: 700
+
+            },
+            colors: [
+                'var(--gray-300)'
+            ],
+
+            subtitle: {
+                text: '',
+                align: 'left'
+            },
+
+            yAxis: {
+                title: {
+                    text: 'Donazioni'
+                },
+                labels: {
+                    formatter: function () {
+                        return this.value + '€';
+                    }
+                }
+            },
+
+            xAxis: {
+                categories: ['Gem', 'Feb', 'Mar', 'Apr', 'Mag', 'Giu',
+                    'Lug', 'Ago', 'Set', 'Ott', 'Nov', 'Dic'],
+                accessibility: {
+                    description: 'Mesi'
+                }
+            },
+
+
+
+            plotOptions: {
+                series: {
+                    label: {
+                        connectorAllowed: false
+                    }
+                }
+            },
+
+            series: [{
+                name: 'Donazioni',
+                data: [43934, 48656, 65165, 81827, 112143, 142383,
+                    171533, 165174, 155157, 161454, 154610]
+            }],
+
+            responsive: {
+                rules: [{
+                    condition: {
+                        maxWidth: 500
+                    },
+                    chartOptions: {
+                        legend: {
+                            layout: 'horizontal',
+                            align: 'center',
+                            verticalAlign: 'bottom'
+                        }
+                    }
+                }]
+            }
+
+        });
+    </script>
+</body>
+
+</body>
+
+</html>

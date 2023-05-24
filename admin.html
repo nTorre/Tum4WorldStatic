@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous">
+        </script>
+
+</head>
+<body>
+
+    <div id="header"></div>
+
+    <div id="nav"></div>
+    
+    
+
+    <div class="container">
+        
+        <div class="row">
+            <div class="col align-content-center">
+                <div style="padding: 40px">
+                    <img class="admin_foto" src="./imgs/utenti.avif">
+                    <h3>Utenti</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed sodales mi. </p>
+                    <button onclick="window.location.href='/utenti.html'" class="btn btn-primary" style="min-width: calc(100% - 100px);">Vai</button>
+                </div>
+            </div>
+
+            <div class="col align-content-center">
+                <div style="padding: 40px">
+                    <img class="admin_foto" src="./imgs/statistiche.jpg">
+                    <h3>Statistiche</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed sodales mi. </p>
+                    <button onclick="window.location.href='/statistiche.html'" class="btn btn-primary" style="min-width: calc(100% - 100px);">Vai</button>
+                </div>
+            </div>
+
+            <div class="col align-content-center">
+                <div style="padding: 40px">
+                    <img class="admin_foto" src="./imgs/donazioni.jpg">
+                    <h3>Donazioni</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed sodales mi. </p>
+                    <button onclick="window.location.href='/donazioni.html'" class="btn btn-primary" style="min-width: calc(100% - 100px);">Vai</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer"></div>
+
+
+    <script>
+        $("#footer").load("./includes/footer.html");
+        $("#header").load("./includes/header.html");
+        $("#nav").load("./includes/logged_nav.html");
+
+    </script>
+</body>
+   
+</body>
+</html>
