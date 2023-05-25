@@ -818,6 +818,10 @@ td, th{
     padding: 0px;;
 }
 
+input[type="checkbox"]{
+    accent-color: var(--primary);
+}
+
 /*responsive*/
 
 /*Big smartphones [426px -> 600px]*/

@@ -1,0 +1,71 @@
+nav {
+    background: var(--secondary);
+}
+
+
+nav a:hover {
+    background: var(--secondary-dark);
+}
+
+.logo path {
+    fill: var(--secondary)
+}
+
+.container {
+    min-height: calc(100vh - 226px);
+    overflow-y: hidden;
+}
+
+aside {
+    background: transparent;
+    padding: 20px 30px 0 50px;
+    display: inline-block;
+    min-height: calc(100vh - 226px);
+    background: var(--white);
+}
+
+.person-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.lat-section {
+    border: 1px solid red;
+    display: inline-block;
+    width: calc(60%);
+}
+
+.img-attivita{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 1px solid var(--gray-300);
+}
+
+input{
+    width: auto;
+}
+
+tr{
+    border-bottom: none;
+}
+
+td, th{
+    padding: 0px;
+}
+
+.row{
+    max-height: calc(100vh - 226px);
+}
+
+h5{
+    color: var(--gray-700);
+    margin-bottom: 10px;
+}
+
+h6{
+    margin-bottom: 5px;
+}
